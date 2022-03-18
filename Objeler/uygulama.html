@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // #1: Bir personelin aşağıdaki bilgilerini object içinde saklayınız.
+
+        // ad : Ali
+        // soyad : Yılmaz
+        // cinsiyet : Erkek
+        // telefon : 02324445566
+        // adres : İzmir Karşıyaka
+        // meslek : Bilgisayar Mühendisi
+        // diller : İngilizce, Almanca
+        // hobiler : Sinema,Spor,Kitap Okumak
+
+        var personel = {
+            ad: 'Ali',
+            soyad: 'Yılmaz',
+            cinsiyet: 'Erkek',
+            telefon: '02324445566',
+            adres: 'İzmir Karşıyaka',
+            meslek: 'Bilgisayar Mühendisi',
+            diller: ['İngilizce', 'Almanca'],
+            hobiler: ['Sinema', 'Spor', 'Kitap Okumak']
+        }
+        console.log(personel);
+
+        // #2: Bu personel kaç dil bilmektedir?
+
+        console.log(personel.ad + ', ' + personel.diller.length + ' dil (' + personel.diller + ') dil bilmektedir.');
+        // #3: Bu personelin hobilerini alt alta yazdırınız.
+
+        // for (var i = 0; i < personel.hobiler.length; i++) {
+        //     console.log(personel.hobiler[i]);
+        // }
+
+        personel.hobiler.forEach(function(hobi) {
+                console.log(hobi);
+            })
+            // #4: 3 elemanlı bir personel bilgi listesi oluşturunuz.
+
+        var personels = [{
+            ad: 'Ali',
+            soyad: 'Yılmaz',
+            cinsiyet: 'Erkek',
+            telefon: '02324445566',
+            adres: 'İzmir Karşıyaka',
+            meslek: 'Bilgisayar Mühendisi',
+            diller: ['İngilizce', 'Almanca'],
+            hobiler: ['Sinema', 'Spor', 'Kitap Okumak']
+        }, {
+            ad: 'Ahmet',
+            soyad: 'Çetin',
+            cinsiyet: 'Erkek',
+            telefon: '02323332211',
+            adres: 'İzmir Konak',
+            meslek: 'Yazılım Destek Uzmanı',
+            diller: ['İngilizce', 'Fransızca'],
+            hobiler: ['Teknoloji', 'Spor', 'Müzik']
+        }, {
+            ad: 'Mehmet',
+            soyad: 'Can',
+            cinsiyet: 'Erkek',
+            telefon: '02325557788',
+            adres: 'İzmir Bornova',
+            meslek: 'Bilgi İşlem Elemanı',
+            diller: ['İngilizce', 'Fransızca'],
+            hobiler: ['Spor', 'Müzik', 'Sinema']
+        }];
+        // for (var i = 0; i < personels.length; i++) {
+        //     console.log(personels[i]);
+        // }
+        personels.forEach(function(personel) {
+            console.log('******************');
+            console.log(personel.ad + ' ' + personel.soyad);
+            personel.diller.forEach(function(dil) {
+                console.log(dil);
+            })
+            console.log('******************');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçerik Güncelleme</title>
+    <style>
+        .active {
+            color: red;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        
+        .f45 {
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Best free stock photos in one place.</h1>
+
+    <h3 id="sub-title">Search for free photos...</h3>
+
+    <p>Lorem ipsum dolor <strong>sit amet.</strong></p>
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+
+    <img src="https://images.pexels.com/photos/731217/pexels-photo-731217.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="500">
+
+    <script>
+        // var p = document.getElementsByTagName('p')[0];
+        // p.textContent = 'Komple Uygulamalı Web Geliştirme';
+        // console.log(p.textContent);
+
+        // var ul = document.querySelector('ul');
+        // ul.textContent = '<li>liste</li>';
+        // console.log(ul.textContent);
+
+
+        var p = document.getElementsByTagName('p')[0];
+        p.innerHTML = '<b>Komple</b> Uygulamalı Web Geliştirme';
+
+        var ul = document.querySelector('ul');
+        ul.innerHTML = '<li>item1</li><li>item2</li>';
+    </script>
+</body>
+
+</html>

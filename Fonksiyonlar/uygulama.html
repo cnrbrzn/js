@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function topla(a, b) {
+        //     return a + b;
+        // }
+
+
+        // var sonuc = topla(10, 20);
+        // console.log(sonuc);
+        // console.log(topla(40, 50));
+
+        var now = 2022;
+
+        function yashesapla(yas) {
+            return now - yas;
+        }
+
+        var ahmet = yashesapla(1990);
+        var ali = yashesapla(1996);
+
+        console.log(ahmet);
+        console.log(ali);
+
+        function emeklilikhesapla(ad, yas) {
+            var k_yas = yashesapla(yas);
+            var emeklilik = 65 - k_yas;
+            if (emeklilik > 0) {
+                console.log(ad + ' ' + emeklilik + ' yıl sonra emekli olabilir.');
+            } else {
+                console.log(ad + ' zaten ' + (emeklilik * -1) + ' yıl önce emekli olmuş.');
+            }
+
+        }
+
+        emeklilikhesapla('Caner', 1995);
+        emeklilikhesapla('Ali', 1954);
+    </script>
+
+</body>
+
+</html>
