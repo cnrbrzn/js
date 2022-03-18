@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diziler</title>
+</head>
+
+<body>
+    <script>
+        var marka = ["Opel", "Toyota", "Mazda", "Renault", "BMW"];
+        var model = new Array("Corsa", "Yaris", "CX-3", "Clio");
+
+        console.log(marka[2]);
+        console.log(model[2]);
+
+
+        model[0] = "Astra";
+        console.log(model);
+
+        var auris = ["Toyota", "Auris", 42, true];
+
+        auris.push('blue');
+        auris.unshift('HB'); // en başa ekler
+        auris.pop(); // dizinin en sonundaki elemanı siler.
+        auris.shift(); // en baştakini siler
+        console.log(auris);
+
+        for (var i = 0; i < marka.length; i++) {
+            console.log(marka[i]);
+        }
+
+        if (marka.indexOf('Mercedes') !== -1) {
+            console.log("bulundu");
+        } else {
+            console.log("aranılan kelime bulunamadı");
+        }
+    </script>
+</body>
+
+</html>
